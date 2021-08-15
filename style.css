@@ -63,6 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  flex-direction: column;
 }
 
 /* text */
@@ -107,6 +108,13 @@ p {
   color: var(--primary-text-color);
   font-size: 2em;
   font-weight: bold;
+  width: 90%;
+  text-align: center;
+}
+
+small {
+  color: var(--primary-text-color);
+  font-size: 1.3em;
   width: 90%;
   text-align: center;
 }

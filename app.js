@@ -138,7 +138,8 @@ const checkNearestDate = (date, month, year) => {
     }
     const status = arrangeDateForNearest(dateFor, monthFor, yearFor);
     if (status) {
-      return [status, counter];
+      const nearestDate = `${dateFor}/${monthFor}/${yearFor}`;
+      return [nearestDate, counter];
     }
 
     //For checking backward
