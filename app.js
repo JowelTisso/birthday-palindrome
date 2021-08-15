@@ -7,7 +7,7 @@ const clickHandler = () => {
   if (inputDate.value) {
     arrangeDate(inputDate.value);
   } else {
-    showMsg("Incorrect date!");
+    showMsg("Please input complete date!");
   }
 };
 
