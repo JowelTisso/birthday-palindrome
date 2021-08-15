@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap");
+
+:root {
+  --primary-text-color: #ffffdd;
+  --secondary-text-color: #006a71;
+  --primary-bg-color: #006a71;
+  --secondary-bg-color: #ffffdd;
+  --type-3-color: #cbeaed;
+  --type-4-color: #d3de32;
+}
+
+body {
+  font-family: "Georama", sans-serif;
+  margin: 20px;
+}
+
+/* container */
+.container {
+  max-width: 100vw;
+}
+
+.container-column {
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.section {
+  background-color: var(--primary-bg-color);
+  width: 100px;
+  border-radius: 10px;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+.container-right {
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-section-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.sub-section-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-section-bottom {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* text */
+.header {
+  color: var(--primary-text-color);
+  display: flex;
+  background-color: var(--primary-bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.intro {
+  color: var(--primary-text-color);
+  font-size: 2.5em;
+  font-weight: bold;
+  max-width: 500px;
+  margin: 2rem;
+  text-align: start;
+}
+
+.highlight {
+  color: var(--type-4-color);
+}
+
+.vertical-text {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: 2rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+p {
+  color: var(--primary-text-color);
+  font-size: 2em;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+}
+
+/* input */
+
+.input-doB {
+  height: 50px;
+  max-width: 300px;
+  min-width: 180px;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  margin: 1rem 0rem;
+  font-size: 1.5em;
+  color: var(--secondary-text-color);
+}
+
+/* button */
+.btn-check {
+  max-width: 300px;
+  min-width: 180px;
+  height: 50px;
+  margin: 1rem 0rem;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+/* spinner */
+.spinner {
+  width: 60px;
+  height: 60px;
+  display: none;
+  align-self: center;
+}
+
+@media screen and (max-width: 760px) {
+  .sub-section-top {
+    flex-direction: column;
+  }
+}
