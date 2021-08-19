@@ -160,3 +160,29 @@ small {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .intro {
+    font-size: 1.7rem;
+  }
+
+  .input-doB {
+    font-size: 0.9rem;
+    max-width: 150px;
+    min-width: 0px;
+  }
+
+  .btn-check {
+    max-width: 150px;
+    min-width: 0px;
+    font-size: 0.9rem;
+  }
+
+  small {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
